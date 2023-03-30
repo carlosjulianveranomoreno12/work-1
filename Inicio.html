@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Kodinger">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Inicio</title>
+	<script type="text/javascript" src="jsc/validarinicio.js"> 
+	</script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/InicioRegistro.css">
+</head>
+
+<body class="my-login-page">
+	<section class="">
+			<div class="row justify-content-center ">
+				<div class="card-wrapper">
+					<div class="brand">
+						<img src="img/logo.jpg" alt="logo">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title text-center">Inicio</h4>
+							<form method="POST" class="my-login-validation" novalidate="">
+								<div class="form-group">
+									<label for="email">Correo electrónico</label>
+									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+									<div class="invalid-feedback">
+										Correo inválido
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="password">Contraseña
+										<a href="#" class="float-right">
+											¿Olvidó su contraseña?
+										</a>
+									</label>
+									<input id="password" type="password" class="form-control" name="password" required data-eye>
+								    <div class="invalid-feedback">
+								    	Contraseña requerida
+							    	</div>
+								</div>
+
+								
+
+								<div class="form-group m-0">
+									<button type="submit" class="btn btn-primary btn-block">
+										Ingresar
+									</button>
+								</div>
+								<div class="mt-4 text-center crear-inicio">
+									¿Posee una cuenta? <a href="Registro.html">Crear Cuenta</a>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="footer">
+						
+					</div>
+				</div>
+			</div>
+	</section>
+<!-- Logica de Usuario -->
+<script src="../jsc/ControladorUsuario.js"></script>
+	
+</body>
+</html>
